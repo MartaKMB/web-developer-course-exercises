@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kaskadowość i dziedziczenie</title>
+    <style>
+        
+/* zadanie 1. */
+        p {
+            color: blue;
+        }
+        
+/* zamień na czerwony min. 2 sposoby */
+        
+        p {
+            color: red;
+        }
+        
+        body p {
+            color: red;
+        }
+        
+/* zadanie 2. */
+        
+        .name {
+            font-size: 30px;
+            background-color: red;
+        }
+        
+/* szary background p z wykorzystaniem gwiazdki */
+        
+        * .name {
+            background-color: grey;
+        }
+        
+/* zadanie 3. bez klas p w div'ie ma mieć font arial a tylko drugi 40px - dziedziczenie */
+        
+        body {
+            font-family: arial;
+        }
+        
+        div {
+            font-size: 40px;
+        }
+        
+/* zadanie 4. */
+        
+        body div p {
+            color: blue;
+        }
+        
+        #header {
+            color: red;
+        }
+/* jaki kolor? niebieski */
+        
+    </style>
+</head>
+<body>
+<!--   zadanie 1 -->
+    <p class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, saepe obcaecati aliquid, incidunt ipsam sint libero perferendis earum, dignissimos commodi architecto deleniti! Culpa praesentium, repellendus sed reprehenderit facere rem, alias!</p>
+<!--    zadanie 2 i 3 -->
+    <div class="user">
+        <p class="name">Jan Nowak</p>
+    </div>
+    <p>Adres:</p>
+<!--    zadanie 4 -->
+    <div id="header">
+        <p>Pierwszy</p>
+        <p>Drugi</p>
+        <p>Trzeci</p>
+    </div>
+</body>
+</html>
