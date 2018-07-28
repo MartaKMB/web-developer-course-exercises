@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+/*    background-color: black; --> rodzic nie widzi wielkości dziecka tło pozostaje białe */
+/*    overflow: hidden; --> rozwiązanie */
+}
+
+nav div.logo {
+    height: 40px;
+    width: 20%;
+    margin-right: 10%;
+/*    padding-right: 10vw; */
+/*    border-right: 10vw solid yellow; */
+    background-color: brown;
+    float: left;
+}
+
+nav ul {
+    width: 70%;
+    height: 40px;
+    background-color: darkcyan;
+    float: left;
+    list-style: none;
+}
+
+nav li {
+    float: left;
+    width: 25%;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    font-family: arial, sans-serif;
+    text-align: center;
+    line-height: 40px;
+    transition: .2s;
+}
+
+nav a:hover {
+    font-size: 24px;
+}
