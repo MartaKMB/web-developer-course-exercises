@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.board {
+    margin: 100px auto 0 auto;
+    border: 3px solid black;
+/*    box-shadow: 0 0 0 3px black;*/
+    width: 400px;
+    font-size: 0;
+}
+
+div.board div {
+    width: 20%;
+    height: 80px;
+    display: inline-block;
+}
+
+div.board div:nth-child(even) {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+}

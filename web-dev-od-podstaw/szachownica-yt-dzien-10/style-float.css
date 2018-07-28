@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.board {
+    margin: 100px auto 0 auto;
+    border: 3px solid black;
+    width: 400px;
+}
+
+div.board div {
+    float: left;
+    width: 20%;
+    height: 80px;
+}
+
+div.board div:nth-child(even) {
+    background-color: black;
+}
+
+div.board::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+}
