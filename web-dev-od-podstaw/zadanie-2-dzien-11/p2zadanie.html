@@ -1,0 +1,56 @@
+<!-- Zadanie dla Ciebie - szachownica 2 x 2 -->
+<!--
+1. wymiary szachownicy: 400px na 400px;
+2. oddal szachownicę o 50px od góry i 50px od lewej (ja pokażę jak wyśrodkować).
+3. zrób border 4px (czarny, jednolity) na rodzicu
+4. ostyluj dwa elementy span w taki sposób by powstały dwa kwadraty o wymiarach: szerokość ma mieć 50% szerokości rodzica, wysokość ma mieć 50% wysokości rodzica. Ustaw je względem rodzica (w rodzicu) tak jak na prezentowanym projekcie.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>zadanie 2 - mini szachownica</title>
+  <style>
+      div.board {
+          box-sizing: border-box;
+          width: 400px;
+          height: 400px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+/*          border: 4px solid black;*/
+          box-shadow: 0 0 12px 4px black;
+          margin-top: -200px;
+          margin-left: -200px;
+      }
+      
+      span {
+          width: 50%;
+          height: 50%;
+          background-color: red;
+          position: absolute;
+      }
+      
+      span:first-of-type {
+          top: 0;
+          left: 0;
+      }
+      
+      span:last-of-type {
+          bottom: 0;
+          right: 0;
+      }
+    </style>
+</head>
+
+<body>
+  <div class="board">
+    <span></span>
+    <span></span>
+  </div>
+</body>
+
+</html>
