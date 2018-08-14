@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both
+}
+
 /*font-family: 'Saira Semi Condensed', sans-serif;*/
 
 /*font-family: 'Saira', sans-serif;*/
@@ -64,10 +70,11 @@ header button {
 }
 
 @media (orientation: portrait) and (min-width: 360px) {
-    header h1, header h2 {
+    header h1,
+    header h2 {
         font-size: 24px;
     }
-    
+
     header button {
         font-size: 16px;
         line-height: 40px;
@@ -76,24 +83,26 @@ header button {
 }
 
 @media (orientation: portrait) and (min-width: 410px) {
-    header h1, header h2 {
+    header h1,
+    header h2 {
         font-size: 26px;
     }
-    
+
     header img {
         right: -20%;
     }
 }
 
 @media (orientation: portrait) and (min-width: 768px) {
-    header h1, header h2 {
+    header h1,
+    header h2 {
         font-size: 32px;
     }
-    
+
     header p {
         font-size: 60px;
     }
-    
+
     header button {
         font-size: 24px;
         line-height: 60px;
@@ -120,10 +129,11 @@ header button {
 }
 
 @media (orientation: landscape) and (min-width: 640px) {
-    header h1, header h2 {
+    header h1,
+    header h2 {
         font-size: 24px;
     }
-    
+
     header button {
         font-size: 16px;
         line-height: 40px;
@@ -134,21 +144,22 @@ header button {
     header p {
         font-size: 52px;
     }
-    
-    header h1, header h2 {
+
+    header h1,
+    header h2 {
         font-size: 34px;
     }
-    
+
     header h1 {
         margin-top: 40px;
     }
-    
+
     header button {
         font-size: 28px;
         line-height: 70px;
         margin-top: 80px;
     }
-    
+
     header img {
         height: 85%;
         right: -5%;
@@ -160,15 +171,16 @@ header button {
         text-align: left;
         left: 6%;
     }
-    
+
     header p {
         font-size: 100px;
     }
-    
-    header h1, header h2 {
+
+    header h1,
+    header h2 {
         font-size: 60px;
     }
-      
+
     header button {
         font-size: 30px;
         line-height: 80px;
@@ -176,7 +188,7 @@ header button {
         padding: 0 40px;
         border-width: 4px;
     }
-    
+
     header img {
         height: 85%;
         right: 0%;
@@ -188,13 +200,246 @@ header button {
         cursor: pointer;
         transition: .3s;
     }
-    
+
     header button:hover {
         background-color: #fff;
         color: #111;
     }
 }
 
+/* sekcja 1sza */
+
 section {
-    min-height: 100vh;
+    min-height: 30vh;
+}
+
+.features {
+    margin-top: 50px;
+    padding: 5%;
+    text-align: center;
+    max-width: 1600px;
+    margin: 50px auto 0 auto;
+}
+
+.features h1 {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.features img {
+    width: 100%;
+    margin: 5px 0;
+    max-width: 375px;
+}
+
+.features h2 {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.features p {
+    font-family: 'Saira', sans-serif;
+    font-size: 12px;
+    font-weight: 300px;
+}
+
+@media (min-width: 360px) {
+    .features h1 {
+        font-size: 28px;
+    }
+
+    .features h2 {
+        font-size: 24px;
+    }
+
+    .features p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .features h1 {
+        font-size: 36px;
+    }
+
+    .features h2 {
+        font-size: 28px;
+    }
+
+    .features p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .features {
+        padding: 5% 2%;
+    }
+
+    .feature {
+        float: left;
+        width: 33%;
+        padding: 20px;
+    }
+
+    .features h1 {
+        font-size: 36px;
+    }
+
+    .features h2 {
+        font-size: 22px;
+    }
+
+    .features p {
+        font-size: 16px;
+        line-height: 120%;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .feature {
+        padding: 20px 40px;
+    }
+
+    .features h1 {
+        font-size: 60px;
+    }
+
+    .features h2 {
+        font-size: 32px;
+    }
+
+    .features p {
+        font-size: 21px;
+        line-height: 140%;
+        padding: 10px;
+    }
+}
+
+/* portfolio */
+
+.portfolio {
+    background-color: black;
+    padding: 10px 0 30px;
+}
+
+.portfolio h1 {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 15px;
+}
+
+.web img {
+    width: 100%;
+}
+
+.portfolio .about {
+    color: white;
+    font-family: 'Saira', sans-serif;
+    font-weight: normal;
+    padding: 10px 20px 20px 0px;
+    text-align: left;
+}
+
+.portfolio .about h2 {
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    text-indent: 20px;
+}
+
+.portfolio .about p {
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.portfolio .project {
+    margin: 0 auto 20px;
+    max-width: 1400px;
+}
+
+.portfolio .project:nth-of-type(odd) {
+    background-color: #ff4f23;
+}
+
+.portfolio .project:nth-of-type(even) {
+    background-color: #29a6dc;
+}
+
+@media (min-width: 768px) {
+    .portfolio h1 {
+        font-size: 40px;
+    }
+
+    .portfolio .about h2 {
+        font-size: 28px;
+        text-indent: 40px;
+    }
+
+    .portfolio .about p {
+        font-size: 18px;
+        padding-left: 40px;
+    }
+
+    .portfolio .project {
+        margin-bottom: 40px;
+    }
+}
+
+@media (orientation: landscape) {
+    .web,
+    .about {
+        width: 50%;
+        float: left;
+    }
+
+    .web img {
+        display: block;
+    }
+
+    .portfolio .project:nth-of-type(even) .web {
+        float: right
+    }
+    
+    .portfolio .project:nth-of-type(even) .about h2 {
+        text-indent: 0;
+        margin-left: 40px;
+    }
+    
+    .portfolio .project:nth-of-type(even) .about {
+        padding-right: 0;
+    }
+    
+    .portfolio .project:nth-of-type(even) .about p {
+        padding-right: 20px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1400px) {
+    .portfolio h1 {
+        font-size: 60px;
+        padding: 30px 0;
+    }
+
+    .portfolio .about h2 {
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .portfolio .about p {
+        line-height: 180%;
+    }
+
+    .portfolio .project {
+        margin-bottom: 40px;
+    }
 }
