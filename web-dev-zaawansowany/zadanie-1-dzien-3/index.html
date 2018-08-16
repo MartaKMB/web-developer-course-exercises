@@ -1,0 +1,137 @@
+<!-- 
+    Układ 16:9
+    Ma być podobny (nie pixel w pixel)
+    Ma być responsywny (dostosowoywać się do wysokości przeglądarki)
+
+    ZŁOTE ZASADY
+    - Zrób tak jak potrafisz i tyle ile potrafisz
+    - Próbuj/testuj/sprawdzaj co by było. Takie próbowanie to najważniejsze cechy programisty
+    - Nie przeskakuj ćwiczenia. 
+ -->
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A dream about old Japan</title>
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .picture {
+            width: 80vh;
+            height: 45vh;
+            /* margin: 20vh auto; */
+            position: absolute;
+            overflow: hidden;
+            background-color: lightblue;
+            z-index: -1;
+            top: calc(50% - 45vh/2);
+            left: calc(50% -80vh/2);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+        }
+
+        .mountain {
+            top: 10%;
+            z-index: 1;
+        }
+
+        .layer-1 {
+            top: 20%;
+            z-index: 2;
+        }
+
+        .layer-2 {
+            top: 34%;
+            z-index: 3;
+        }
+
+        .layer-3 {
+            top: 36%;
+            z-index: 4;
+        }
+
+        .layer-4 {
+            top: 45%;
+            z-index: 5;
+        }
+
+        .layer-5 {
+            top: 66%;
+            z-index: 6;
+        }
+
+        img.moon {
+            width: 10%;
+            height: auto;
+            top: 5%;
+            left: 5%;
+            z-index: 0;
+        }
+
+        img.cloud-1 {
+            width: 30%;
+            height: auto;
+            top: 10%;
+            left: 0;
+        }
+
+        img.cloud-2 {
+            width: 40%;
+            height: auto;
+            top: 10%;
+            left: auto;
+            right: 10%;
+        }
+
+        img.branch {
+            width: 35%;
+            height: auto;
+            top: 18%;
+            left: auto;
+            right: 0;
+            z-index: 6;
+        }
+
+        img.signs {
+            width: 8%;
+            height: auto;
+            top: auto;
+            left: 5%;
+            bottom: 10%;
+            z-index: 6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="picture">
+        <!-- img[src=img/japan$.png]*11 -->
+        <img class="mountain" src="img/japan1.png" alt="">
+        <img class="layer-1" src="img/japan2.png" alt="">
+        <img class="layer-2" src="img/japan3.png" alt="">
+        <img class="layer-3" src="img/japan4.png" alt="">
+        <img class="layer-4" src="img/japan5.png" alt="">
+        <img class="layer-5" src="img/japan6.png" alt="">
+        <img class="moon" src="img/japan7.png" alt="">
+        <img class="cloud-1" src="img/japan8.png" alt="">
+        <img class="cloud-2" src="img/japan9.png" alt="">
+        <img class="branch" src="img/japan10.png" alt="">
+        <img class="signs" src="img/japan11.png" alt="">
+
+    </div>
+</body>
+
+</html>
