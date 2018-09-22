@@ -1,0 +1,14 @@
+header { height: 30px; background-color: #ee4455; }
+
+header div.small { width: 150px; height: 150px; border-radius: 50%; background-color: black; }
+
+header div.medium { width: 150px; height: 150px; border-radius: 50%; background-color: black; }
+
+header div.large { width: 250px; height: 250px; border-radius: 25%; background-color: black; }
+
+nav { height: 30vh; color: #ee4455; }
+
+nav ul { background-color: aqua; }
+
+nav ul li { font-size: 30px; }
+/*# sourceMappingURL=style.css.map */
